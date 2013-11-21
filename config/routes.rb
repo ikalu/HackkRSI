@@ -54,5 +54,6 @@ AiInActionWebsite::Application.routes.draw do
   #     resources :products
   #   end
 
-  get "pages/home"
+  root 'pages#home'
+  match '/about', to: 'pages#about', via:'get'
 end
