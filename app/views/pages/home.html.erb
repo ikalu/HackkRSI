@@ -1,8 +1,196 @@
-<div class="center hero-unit">
-  <h1>AI in Action</h1>
+<style>
+/* CUSTOMIZE THE CAROUSEL
 
-  <h2>Home page for AI in Action</h2>
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
-</div>
+    -------------------------------------------------- */
+    /* Carousel base class */
+
+    .carousel {
+
+      margin-bottom: 60px;
+
+    }
+
+
+
+    .carousel .container {
+
+      position: relative;
+
+      z-index: 9;
+
+    }
+
+
+
+    .carousel-control {
+
+      height: 80px;
+
+      margin-top: 0;
+
+      font-size: 120px;
+
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+
+      background-color: transparent;
+
+      border: 0;
+
+      z-index: 10;
+
+    }
+
+
+
+    .carousel .item {
+
+      height: 500px;
+
+    }
+
+    .carousel img {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      min-width: 100%;
+
+      height: 500px;
+
+    }
+
+
+
+    .carousel-caption {
+
+      background-color: transparent;
+
+      position: static;
+
+      max-width: 550px;
+
+      padding: 0 20px;
+
+      margin-top: 200px;
+
+    }
+
+    .carousel-caption h1,
+
+    .carousel-caption .lead {
+
+      margin: 0;
+
+      line-height: 1.25;
+
+      color: #fff;
+
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+
+    }
+
+    .carousel-caption .btn {
+
+      margin-top: 10px;
+
+    }
+</style>
+
+
+
+
+
+<div class="center hero-unit">
+
+<h1>AI in Action</h1>
+
+<!-- Carousel
+
+    ================================================== -->
+
+    <div id="myCarousel" class="carousel slide">
+
+      <div class="carousel-inner">
+
+        <div class="item active">
+
+	  <%= image_tag("slide0.jpg") %>
+
+          <div class="container">
+
+            <div class="carousel-caption">
+
+              <h1>Example headline.</h1>
+
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="item">
+
+	  <%= image_tag ("slide1.jpg") %>
+
+          <div class="container">
+
+            <div class="carousel-caption">
+
+              <h1>Another example headline.</h1>
+
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="item">
+	  <%= image_tag("slide2.jpg") %>
+
+          <div class="container">
+
+            <div class="carousel-caption">
+
+              <h1>One more for good measure.</h1>
+
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+    </div><!-- /.carousel -->
+
+
+
+
+
+
+
+
+</div> <!--hero unit -->
+
 
 <%= link_to image_tag("rails.png", alt: ""), 'http://rubyonrails.org/' %>
+
