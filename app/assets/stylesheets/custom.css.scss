@@ -29,9 +29,17 @@ $bodyBackground: #000;
 /* FEATURE BOXES 
 ---------------------------------------------------- */
      #dilemma{
-      padding:200px 0px 200px 0px;	
+      padding:20px 0px 200px 0px;	
       background-color: white;
       font-family: 'Chelsea Market', cursive;
+      text-align: center;
+
+      h1 {
+        text-align: center;
+	padding-bottom: 150px;
+	padding-top: 20px;
+	}
+      
      }
 
     #effort {
@@ -120,13 +128,13 @@ $bodyBackground: #000;
 {
     
 width:30%;
+margin: auto;
+
 }
 
 .circle-text:after 
 {
-    
-content
-:"";
+content:"";
     
 display:block;
     
@@ -142,9 +150,7 @@ background:#4679BD;
  
     
 -webkit-border-radius:50%;
- 
-    
-border-radius:50%;
+ border-radius:50%;
 }
 .circle-text div 
 {
@@ -162,6 +168,8 @@ margin-top:-0.5em;
 text-align:center;
     
 color:white;
+margin:auto;
+
 }
 
 
