@@ -1,3 +1,5 @@
+<link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+
 <style>
 /* CUSTOMIZE THE CAROUSEL
 
@@ -69,7 +71,7 @@
 
       max-width: 550px;
 
-      padding: 0 20px;
+      padding: 0px;
 
       margin-top: 200px;
 
@@ -96,7 +98,7 @@
     }
 </style>
 
-<!-- Carousel
+ <!-- Carousel
 
     ================================================== -->
 
@@ -126,7 +128,7 @@
 
         <div class="item">
 
-	  <%= image_tag ("slide1.jpg") %>
+	  <%= image_tag("slide1.jpg") %>
 
           <div class="container">
 
@@ -145,6 +147,7 @@
         </div>
 
         <div class="item">
+
 	  <%= image_tag("slide2.jpg") %>
 
           <div class="container">
@@ -172,47 +175,71 @@
     </div><!-- /.carousel -->
 
 
-    <div id="education" class="center hero-unit">
-
-      <div class="circle-text"><div>56%</div></div>
-      <div class="circle-text"><div>25%</div></div>
-      <div class="circle-text"><div>13%</div></div>
-
-      <h1>The Education Gap</h1>
-      <ul>
-	<li>56% of low income students are underprepared in mathematics</li>
-	<li>25% of minority students leave STEM majors because of inadequete preparation</li>
-	<li>And only 13% of STEM degrees are earned by minorities</li>
-	</ul>
-    </div><!-- /workForce -->
 
 
-    <div id="workForce" class="center hero-unit">
-      <h1>The Work Foce Dilemma</h1>
-      <ul>
-	<li>Only 6% of STEM Workers are black</li>
-	<li>Only 4% of STEM Workers are Latino </li>
-	<li>Only 27% of STEM Workers are Women</li>
-      </ul>
-    </div><!-- /workForce -->
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    
+    <div id="dilemma" class="row">
+
+      <div class="span4">
+
+        <h2>Sadly...</h2>
+	<div class="circle-text" ><div>56%</div></div>
+	<p>of low income students are underprepared in mathematics</p>
+
+      </div><!-- /.span4 -->
+
+      <div class="span4">
+
+	<h2>Unfortunately...</h2>
+	<div class="circle-text" ><div>31%</div></div>
+	<p>of minority students leave STEM majors because of inadequete preparation</p>
+
+      </div><!-- /.span4 -->
+
+      <div class="span4">
+        <h2>Only...</h2>
+	<div class="circle-text"><div>25%</div></div>
+	<p>of computer science jobs are held by women</p>
 
 
-    <div id="solution" class="center hero-unit">
-      <h1>Our Efforts</h1>
-      <p>AI in Action helps bridge the gap in the Orangeburg, SC community by preparing students for STEM education. We a course in probalistic robotics which exposes students to an array of topics in mathematics and computer science.</p>
-      <p>Students have the opportunity to learn about:</p>
+      </div><!-- /.span4 -->
+
+    </div><!-- /.row -->
+
+
+    <div id="effort" class="row">
+      <h1>Let's Bridge the Gap!</h1>
+      <p>AI in Action is provides high school students in the Orangeburg, SC  community with a free afterschool course in probalistic robotics. Our program exposes students to mathematics and computer science topics far beyond their high school curriculum. By completing a series of programming assignmnets students learn are equiped with the fundamentals of mobile robotics. The course rigor and variety prepares students to pursue any STEM disipline while giving each partcipant a robotics education they will not find anywhere else.</p>
+      
+      <p>The course covers fundamentals of the following topics: </p>
       <ul>
 	<li>Python</li>
 	<li>Linux</li>
 	<li>Robot Navigation</li>
 	<li>Robot Path Planning</li>
 	<li>Computer Vision</li>
-	<li>ROS (Robot Operating System)</li>
+	<li>Robot Operating System</li>
 	<li>Linear Algebra</li>
 	<li>Probability Theory</li>
       </ul>
-      
-    </div><!--/solution-->
 
-<%= link_to image_tag("rails.png", alt: ""), 'http://rubyonrails.org/' %>
+
+
+    </div><!-- /.row -->
+
+
+
+
+
+
+
+    
+
+
+
+
+    <%= link_to image_tag("rails.png", alt: ""), 'http://rubyonrails.org/' %>
 

@@ -10,22 +10,25 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "AI In Action", '#', id: "logo" %>
+
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+          <%= link_to "AI in Action", '#', id: "logo" %>
           <nav>
-            <ul class="nav pull-left">
-              <li><%= link_to "The Education Gap",    '#' %></li>
-              <li><%= link_to "The Workforce Dilemma",    '#' %></li>
-              <li><%= link_to "Our Efforts",    '#' %></li>
+            <ul class="nav pull-right">
+              <li><%= link_to "Home",    '#' %></li>
+              <li><%= link_to "The Dilemma",    '#' %></li>
+              <li><%= link_to "Our Efforts", '#' %></li>
+              <li><%= link_to "Contact", '#' %></li>
             </ul>
           </nav>
-        </div>
       </div>
-    </header>
-    <%= yield %>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+        <%= yield %>
     </div>
   </body>
 </html>
