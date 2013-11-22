@@ -55,5 +55,5 @@ AiInActionWebsite::Application.routes.draw do
   #   end
 
   root 'pages#home'
-  match '/about', to: 'pages#about', via:'get'
+  match '/contact', to: 'pages#contact', via: 'get'
 end
