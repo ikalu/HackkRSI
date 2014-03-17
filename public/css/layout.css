@@ -107,21 +107,20 @@ header.static {
 header .logo {
    
    position: relative;
-   height: 54px;
-   width: 150px;
+   height: 91px;
+   width: 500px;
    float: left;
 }
 header .logo a {
    display: block;
    padding: 0;
    margin: 0;
-   height: 18px;
-   width: 91px;
+   height: 91px;
+   width: 291px;
    line-height: 18px;
-
    position: absolute;
    left: 12px;
-   top: 16px;
+   top: 1px;
 }
 
 /* primary navigation
