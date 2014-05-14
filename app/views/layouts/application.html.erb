@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <!--- Basic Page Needs
-   ================================================== -->
-	<meta charset="utf-8">
-	<title>AI In Action</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <!--- Basic Page Needs
+	================================================== -->
+    <meta charset="utf-8">
+    <title>AI In Action</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-   <!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Mobile Specific Metas
+	 ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-   <!-- Favicons
-	================================================== -->
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Favicons
+	 ================================================== -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <%= stylesheet_link_tag "application", media: "all",
-                                           "data-turbolinks-track" => true %>
+        "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
   </head>
 
@@ -35,38 +35,38 @@
 
 
     <!-- Header
-   ================================================== -->
+	 ================================================== -->
     <header class="mobile">
 
       <div class="row">
 	
-         <div class="col full">
+        <div class="col full">
 
-            <div class="logo">
-	      <a href="#"><img alt="" src="images/logo.png"></a>
-            </div>
-	    
-	    
-            <nav id="nav-wrap">
+          <div class="logo">
+	    <a href="#"><img alt="" src="images/logo.png"></a>
+          </div>
+	  
+	  
+          <nav id="nav-wrap">
 
-               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-               <ul id="nav" class="nav">
-	         <li><%= link_to "Home", root_url(anchor: "intro") %></li>
-	         <li><%= link_to "The Dilemma", root_url(anchor: "services") %></li>
-		 <li><%= link_to "Get Involved", involved_path %></li>
-	         <li id="don"><a href="">Donate</a></li>
-                 <li><a href="#about">Contact</a></li>
-               </ul>
+            <ul id="nav" class="nav">
+	      <li><%= link_to "Home", root_url(anchor: "intro") %></li>
+	      <li><%= link_to "The Dilemma", root_url(anchor: "services") %></li>
+	      <li><%= link_to "Get Involved", involved_path %></li>
+	      <li><a href="#" data-reveal-id="modal-00">Donate</a></li>
+              <li><a href="#about">Contact</a></li>
+            </ul>
 
-            </nav>
+          </nav>
 
-         </div>
+        </div>
 
       </div>
 
-   </header> <!-- Header End -->
+    </header> <!-- Header End -->
 
 
 
@@ -74,34 +74,85 @@
     <%= yield %>
 
 
-   <!-- footer
-	================================================== -->
-   <footer>
-     
+    <!-- footer
+	 ================================================== -->
+    <footer>
+      
       <div class="row">
 
-         <div class="col g-7">
-            <ul class="copyright">
-               <!--<li>&copy; 2013 Kreative</li> -->
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout">Styleshout</a></li>
-            </ul>
-         </div>
+        <div class="col g-7">
+          <ul class="copyright">
+            <!--<li>&copy; 2013 Kreative</li> -->
+            <li>Design by <a href="http://www.styleshout.com/" title="Styleshout">Styleshout</a></li>
+          </ul>
+        </div>
 
-         <!--<div class="col g-5 pull-right">
+        <!--<div class="col g-5 pull-right">
             <ul class="social-links">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-               <li><a href="#"><i class="icon-rss-sign"></i></a></li>
+              <li><a href="#"><i class="icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+              <li><a href="#"><i class="icon-linkedin"></i></a></li>
+              <li><a href="#"><i class="icon-skype"></i></a></li>
+              <li><a href="#"><i class="icon-rss-sign"></i></a></li>
             </ul>
-         </div>-->
+        </div>-->
 
       </div>
 
-   </footer> <!-- Footer End-->
+    </footer> <!-- Footer End-->
+
+    <!--- Payment Amount -->
+    <div id="modal-00" class="reveal-modal">
+      
+      <%= image_tag('portfolio/donate.jpg') %>
+      
+      <div class="description-box">
+
+	<h4>How much would you like to donate?</h4>
+
+	<p>
+	  <form>
+	    Amount: <input type="text" name="amount" id="donation"/>
+	    <input type="submit" value="Next" id="donate" />
+	  </form>
+	</p>
+      </div>
+
+
+      <div class="link-box">
+
+
+	<a class="close-reveal-modal">Close</a>
+
+      </div>
+    </div>
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_V3YbeQlUvtNWvKFPkFBd8fZD',
+    image: '/square-image.png',
+    token: function(token, args) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+  document.getElementById('donate').addEventListener('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Demo Site',
+      description: '2 widgets ($20.00)',
+      amount: document.getElementById("donation").value * 100
+    });
+    e.preventDefault();
+  });
+</script>
+
+
+
   </body>
-
-
 </html>
