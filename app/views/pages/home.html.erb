@@ -1,256 +1,333 @@
-<link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+   <!-- Intro Section
+   ================================================== -->
+   <section id="intro">
 
-<style>
-/* CUSTOMIZE THE CAROUSEL
+      <!-- Flexslider Start-->
+	   <div id="intro-slider" class="flexslider">
 
-    -------------------------------------------------- */
-    /* Carousel base class */
+		   <ul class="slides">
 
-    .carousel {
+			   <!-- Slide -->
+			   <li>
+				   <div class="row">
+					   <div class="col full">
+						   <div class="slider-text">
+							   <h2>We prepare students to be game changers in the tech industry.</h2>
+							   <p>We're giving them the tools to innovate now.</p>
+						   </div>
+					   </div>
+				   </div>
+			   </li>
 
-      margin-bottom: 60px;
+            <!-- Slide -->
+			   <li>
+				   <div class="row">
+					   <div class="col full">
+						   <div class="slider-text">
+							   <h2>We teach women, minority, and low income students advanced topics in robotics</h2>
+							   <p>Robot Path Planning, Computer Vision, Python, ROS, and Linux just to name a few</p>
+						   </div>
+					   </div>
+				   </div>
+			   </li>
 
-    }
+		   </ul>
+	   </div>
+	   <!-- Flexslider End-->
 
-    .carousel .container {
-
-      position: relative;
-
-      z-index: 9;
-
-    }
-
-
-    .carousel-control {
-
-      height: 80px;
-
-      margin-top: 0;
-
-      font-size: 120px;
-
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-
-      background-color: transparent;
-
-      border: 0;
-
-      z-index: 10;
-
-    }
+   </section> <!-- Intro Section End-->
 
 
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
 
-    .carousel .item {
+      <div class="row section-head">
 
-      height: 500px;
+         <div class="col one-third">
+            <h2>The Dilemma</h2>
 
-    }
+         </div>
 
-    .carousel img {
-
-      position: absolute;
-
-      top: 0;
-
-      left: 0;
-
-      min-width: 100%;
-
-      height: 500px;
-
-    }
-
-
-
-    .carousel-caption {
-
-      background-color: transparent;
-
-      position: static;
-
-      max-width: 550px;
-
-      padding: 0px;
-
-      margin-top: 200px;
-
-    }
-
-    .carousel-caption h1,
-
-    .carousel-caption .lead {
-
-      margin: 0;
-
-      line-height: 1.25;
-
-      color: #fff;
-
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-
-    }
-
-    .carousel-caption .btn {
-
-      margin-top: 10px;
-
-    }
-</style>
-
- <!-- Carousel
-
-    ================================================== 
-
-    <div id="myCarousel" class="carousel slide">
-
-      <div class="carousel-inner">
-
-        <div class="item active">
-
-	  <%= image_tag("slide0.jpg") %>
-
-          <div class="container">
-
-            <div class="carousel-caption">
-
-              <h1>Example headline.</h1>
-
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-
+         <div class="col two-thirds">
+            <div class="intro">
+              <p>
+		There is a grave disparity in the amount of socio-economically disadvantaged
+		students studying or employed in computer science. According to the U.S BLS,
+		women account for a dismal 20% of software developers in US. Some scholars
+		believe the lack of women in technology because of stigmatization. The same
+		BLS report shows that only 5% of software developers are Hispanic and only
+		4% are African American. The lack of diversity in the computational sciences
+		has much to do with lack of preparation in high school. Research by the NSF
+		shows that low income and minority students are more likely to be assigned
+		lower curriculum tracks” where students do not have the opportunity to pursue
+		the advanced mathematics necessary to excel in computer science. AI In Action
+		seeks to increase the percentage of ground breaking women, minority, and low
+		income students in the tech industry.
+	      </p>
             </div>
-
-          </div>
-
-        </div>
-
-        <div class="item">
-
-	  <%= image_tag("slide1.jpg") %>
-
-          <div class="container">
-
-            <div class="carousel-caption">
-
-              <h1>Another example headline.</h1>
-
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="item">
-
-	  <%= image_tag("slide2.jpg") %>
-
-          <div class="container">
-
-            <div class="carousel-caption">
-
-              <h1>One more for good measure.</h1>
-
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-
-            </div>
-
-          </div>
-
-        </div>
+         </div>
 
       </div>
 
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-
-    </div><!-- /.carousel -->
+      <div class="row">
 
 
-   
+         </div> <!-- Services-Wrapper End -->
 
-  <div class="container marketing">
+      </div> <!--end row -->
 
-    <!-- Three columns of text below the carousel -->
-    
-    <a href="#dilemma"><div id="dilemma" class="row">
-	<h1>The Dilemma</h1>
-
-      <div class="span4">
-	
-
-        <h2>Sadly...</h2>
-	<div class="circle-text" ><div>56%</div></div>
-	<p>of low income students are underprepared in mathematics</p>
-
-      </div><!-- /.span4 -->
-
-      <div class="span4">
-
-	<h2>Unfortunately...</h2>
-	<div class="circle-text" ><div>31%</div></div>
-	<p>of minority students leave STEM majors because of inadequate preparation</p>
-
-      </div><!-- /.span4 -->
-
-      <div class="span4">
-        <h2>Only...</h2>
-	<div class="circle-text"><div>25%</div></div>
-	<p>of computer science jobs are held by women</p>
+   </section> <!-- Services Section End -->
 
 
-      </div><!-- /.span4 -->
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
 
-    </div></a><!-- /.row -->
+      <div class="row section-head">
+         <div class="col full">
 
+            <h2>Our Efforts</h2>
+            <p class="desc">Bridging the Gap</p>
 
-    <a href="#effort"><div id="effort" class="row">
-      <h1>Bridging the Gap!</h1>
-      <p>Ai in Action is provides high school students in the Orangeburg, SC  community with a free after school course in probabilistic robotics. Our program exposes students to mathematics and computer science topics far beyond their high school curriculum. By completing a series of programming assignments students learn are equipped with the fundamentals of mobile robotics. The course rigor and variety prepares students to pursue any STEM discipline while giving each participant a robotics education they will not find anywhere else.</p>
+            <p class="intro">
+	      Ai in Action provides high school students in the Orangeburg, SC  community with a free after school course in probabilistic robotics. Our program exposes students to mathematics and computer science topics far beyond their high school curriculum. By completing a series of programming assignments students learn are equipped with the fundamentals of mobile robotics. The course rigor and variety prepares students to pursue any STEM discipline while giving each participant a robotics education they will not find anywhere else.
+            </p>
 
-      <p>The course covers fundamentals of the following topics: </p>
+         </div>
+      </div>
 
-      <li>Python</li>
-	<li>Linux</li>      
-	<li>Robot Navigation</li>
-	<li>Robot Path Planning</li>
-	<li>Computer Vision</li>
-	<li>Robot Operating System</li>
-	<li>Linear Algebra</li>
-	<li>Probability Theory</li>
+      <div class="row">
 
+	<img src="images/mylen.jpg" />
 
-
-
-    </div></a><!-- /.row -->
-
-    <div id="contact" class="row">
-      <h1>Contact Information</h1>
-      <h2>Eddie Massey III</h2>
-      <h3>Founder</h3>
-
-      <%= mail_to("eddie.massey@case.edu", "Email") %>
-
-    </div><!-- /.row -->
+      </div> <!-- End Row -->
 
 
+      <!-- Modal Popup
+	   =========================================================== -->
+
+      <!-- modal-01 -->
+	   <div id="modal-01" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-cosmic-sneakers.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>The Cosmic Sneakers</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+		   </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div><!-- modal-01 End -->
+
+      <!-- modal-02 -->
+	   <div id="modal-02" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-milk-splash.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>Milk Splash</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-02 End -->
+
+      <!-- modal-03 -->
+	   <div id="modal-03" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-eve.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>Eve</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography, Branding</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-03 End -->
+
+      <!-- modal-04 -->
+	   <div id="modal-04" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-sneaker-splash.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>Sneaker Splash</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography, Branding</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-04 End -->
+
+      <!-- modal-05 -->
+	   <div id="modal-05" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>Judah</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-05 End -->
+
+      <!-- modal-06 -->
+	   <div id="modal-06" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-vector-flower.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>Vector Flower</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-06 End -->
+
+      <!-- modal-07 -->
+	   <div id="modal-07" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-clock.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>Clock</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-07 End -->
+
+      <!-- modal-08 -->
+	   <div id="modal-08" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/portfolio/modals/m-fields.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>Fields</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-08 End -->
+
+   </section> <!-- Portfolio End -->
+
+<!-- Donate Section -->
 
 
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
 
+      <div class="row">
+         <div class="col full"><h3>Our Work Process.</h3></div>
+      </div>
 
-    
+      <div class="row process-wrap">
+
+         <div class="col">
+            <h4>Explore.</h4>
+
+            <p>AI In Action provides a level of rigor that causes students to go far beyond memorizing facts. They must explore math and computer science topics that they've never even heard of.
+	 </div>
 
 
+         <div class="col">
+            <h4>Design.</h4>
+
+            <p>
+              Project based learning allows student creativity to flourish as they choose their own approaches to solving problems. 
+              
+            </p>
+			</div>
+
+         <div class="col m-first">
+            <h4>Develop.</h4>
+
+            <p>Once our scholars think up a solution, they're given free reign to code and test their algorithms.</p>
+
+	 </div>
+
+         <div class="col">
+            <h4>Deliver.</h4>
+
+            <p>
+	      Learning shouldn't stop at instruction and assigned projects. At the end each student creates a robotic solution to a pressing problem. 
+            </p>
+			</div>
+
+      </div> <!-- Process Wrap End -->
+
+      <div class="row">
+         <div class="col full"><h3>Contact.</h3></div>
+      </div>
 
 
-    <%= link_to image_tag("rails.png", alt: ""), 'http://rubyonrails.org/' %>
+      <!-- Team Wrap End -->
+      <div class="row team-wrap">
 
+         <div class="col one-fourth">
+
+            <img src="images/team/team-img-01.jpg" alt=""/>
+
+            <div class"member-name">
+               <h5>Eddie Massey III</h5>
+	       <h6>eddiemassey@ai-inaction.org</h6>
+               <span>Founder</span>
+
+            </div>
+
+            <ul class="member-social">
+               <li><a href="https://www.facebook.com/eddiemasseyIII"><i class="icon-facebook"></i></a></li>
+               <li><a href="https://twitter.com/eddiemasseyiii"><i class="icon-twitter"></i></a></li>
+	       <li><a href="https://www.linkedin.com/in/eddiemasseyiii"><i class="icon-linkedin"></i></a></li>
+
+            </ul>
+
+	 </div>
+
+
+   </section> <!-- About Section End-->
+  
