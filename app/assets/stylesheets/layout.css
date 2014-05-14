@@ -307,6 +307,43 @@ ul#nav li.active a { color: #11ABB0; }
 }
 #services .services-wrapper i { margin-right: 10px; }
 
+/* ================================================================== */
+
+/* apply, a copy of services
+
+/* ================================================================== */
+
+#apply {
+   background: #1b1e21 url(../images/patterns/applybg.png);
+   padding-top: 156px;
+   padding-bottom: 120px;
+   color: #4E565F;
+}
+
+#apply a, #apply a:visited  { color: #C4C4C4; }
+#apply a:hover, #apply a:focus { color: #11ABB0; }
+
+#apply .section-head h2 { color: #11ABB0; }
+#apply .section-head p.desc,
+#apply .section-head .intro { color: #57606B; }
+
+.apply-wrapper { margin-top: 42px; }
+.apply-wrapper .col {
+   width: 33.33333%;
+   margin-bottom: 30px;
+}
+.apply-wrapper h2 {
+   font: 16px/24px montserrat-bold, sans-serif;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+   color: #C4C4C4;
+   margin-bottom: 18px;
+}
+.apply-wrapper p {
+   font-size: 16px;
+   line-height: 30px;
+}
+#apply .apply-wrapper i { margin-right: 10px; }
 
 /* ================================================================== */
 
@@ -355,6 +392,60 @@ ul#nav li.active a { color: #11ABB0; }
 /* on hover */
 .portfolio-item:hover .item-wrap { background-color: #0f9095; }
 .portfolio-item:hover h5 a { color: #fff !important; }
+
+
+/* ================================================================== */
+
+/* Get Involved, a copy of portfolio
+
+/* ================================================================== */
+
+#involved {
+   background: #f5f5f5 url(../images/patterns/grey.png);
+   padding-top: 156px;
+   padding-bottom: 120px;
+}
+#involved .section-head h2 { color: #0f9095; }
+#involved .section-head p.desc { color: #999999; }
+#involved .section-head .intro { color: #A3A3A3; }
+
+/* Involved Content */
+#involved-wrapper { margin-top: 36px; }
+#involved-wrapper .col {
+   width: 25%;
+   margin-bottom: 36px;
+}
+
+.involved-item .item-wrap {
+   background: #fff;
+   overflow: hidden;
+
+   -webkit-box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.1);
+   -moz-box-shadow:    0px 1px 1px rgba(50, 50, 50, 0.1);
+   box-shadow:         0px 1px 1px rgba(50, 50, 50, 0.1);
+
+   -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.involved-item .item-wrap a { display: block; }
+.involved-item .involved-item-meta { padding: 12px 0; }
+.involved-item .involved-item-meta h5 a {
+   font: 13px/24px montserrat-bold, sans-serif;
+   color: #0f9095;
+   margin-left: 7%;
+}
+
+/* on hover */
+.involved-item:hover .item-wrap { background-color: #0f9095; }
+.involved-item:hover h5 a { color: #fff !important; }
+
+
+
+
+
 
 
 /* Reveal Modal Plugin Styles

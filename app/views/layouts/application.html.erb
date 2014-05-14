@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AI in Action</title>
+   <!--- Basic Page Needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>AI In Action</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+   <!-- Favicons
+	================================================== -->
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -9,25 +28,80 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
   </head>
 
-  <header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="navbar-inner">
-      <div class="container">
-          <%= link_to "Ai in Action", '#', id: "logo" %>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %></li>
-              <li><%= link_to "The Dilemma",    '#dilemma' %></li>
-              <li><%= link_to "Our Efforts", '#effort' %></li>
-              <li><%= link_to "Contact", '#contact' %></li>
-            </ul>
-          </nav>
-      </div>
-    </div>
-  </header>
-  <body>
-        <%= yield %>
+  <body data-spy="scroll" data-target="#nav-wrap">
 
+
+    <!-- Header
+   ================================================== -->
+    <header class="mobile">
+
+      <div class="row">
+	
+         <div class="col full">
+
+            <div class="logo">
+	      <a href="#"><img alt="" src="images/logo.png"></a>
+            </div>
+	    
+	    
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+	         <li><%= link_to "Home", root_url(anchor: "intro") %></li>
+	         <li><%= link_to "The Dilemma", root_url(anchor: "services") %></li>
+		 <li><%= link_to "Get Involved", involved_path %></li>
+	         <li id="don"><a href="">Donate</a></li>
+                 <li><a href="#about">Contact</a></li>
+               </ul>
+
+            </nav>
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+
+
+
+    <%= yield %>
+
+
+   <!-- footer
+	================================================== -->
+   <footer>
+     
+      <div class="row">
+
+         <div class="col g-7">
+            <ul class="copyright">
+               <!--<li>&copy; 2013 Kreative</li> -->
+               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout">Styleshout</a></li>
+            </ul>
+         </div>
+
+         <!--<div class="col g-5 pull-right">
+            <ul class="social-links">
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="#"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li><a href="#"><i class="icon-skype"></i></a></li>
+               <li><a href="#"><i class="icon-rss-sign"></i></a></li>
+            </ul>
+         </div>-->
+
+      </div>
+
+   </footer> <!-- Footer End-->
   </body>
+
+
 </html>

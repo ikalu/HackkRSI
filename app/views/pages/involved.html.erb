@@ -8,7 +8,7 @@
 
 
 
-      <h2>How Can You Fit In?</h2>
+      <h2>Where Do You Fit In?</h2>
 
       <p class="desc">You can be apart of changing the future.</p>
 
@@ -46,7 +46,7 @@
 
 	  <div class="portfolio-item-meta">
 
-	    <h5><a href="#">Apply as a Student!</a></h5>
+	    <h5><%= link_to "Apply as a Student!",  '#' %></h5>
 
 	  </div>
 
@@ -74,7 +74,7 @@
 
 
 
-      <div class="col portfolio-item">
+      <!--<div class="col portfolio-item">
 
         <div class="item-wrap">
 	  
@@ -88,7 +88,7 @@
 
         </div>
 
-      </div> 
+      </div> -->
 
 
 
@@ -96,7 +96,7 @@
 
         <div class="item-wrap">
 
-	  <a href="#" data-reveal-id="modal-04"><%= image_tag("portfolio/donate.jpg") %></a>
+	  <a href="#" data-reveal-id="modal-03"><%= image_tag("portfolio/donate.jpg") %></a>
 
 	  <div class="portfolio-item-meta">
 
@@ -129,17 +129,16 @@
 
 
 
-    <img class="scale-with-grid" src="images/portfolio/modals/m-cosmic-sneakers.jpg" alt="" />
+    <%= image_tag('portfolio/student.jpg') %>
 
 
 
     <div class="description-box">
 
-      <h4>The Cosmic Sneakers</h4>
+      <h4>Apply Now!</h4>
 
-      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+      <p><iframe src="https://docs.google.com/forms/d/1IpgQS9_YGz1jWNCZNy14avegbRbWtx-fMML0iiEno98/viewform?embedded=true" width="550" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe></p>
 
-      <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
 
     </div>
 
@@ -147,7 +146,6 @@
 
     <div class="link-box">
 
-      <a href="http://www.behance.net">Details</a>
 
       <a class="close-reveal-modal">Close</a>
 
@@ -165,25 +163,22 @@
 
 
 
-    <img class="scale-with-grid" src="images/portfolio/modals/m-milk-splash.jpg" alt="" />
+    <%= image_tag('portfolio/volunteer.jpg') %>
 
 
 
     <div class="description-box">
 
-      <h4>Milk Splash</h4>
+      <h4>Volunteer Today!</h4>
 
-      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+      <p><iframe src="https://docs.google.com/forms/d/1PuLjhiwaqaYIDqknJUGdYDAuEWwZKNgoHvEPGZ5e9L0/viewform?embedded=true" width="550" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe></p>
 
-      <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
 
     </div>
 
 
 
     <div class="link-box">
-
-      <a href="http://www.behance.net">Details</a>
 
       <a class="close-reveal-modal">Close</a>
 
@@ -199,27 +194,29 @@
 
   <div id="modal-03" class="reveal-modal">
 
-
-
-    <img class="scale-with-grid" src="images/portfolio/modals/m-eve.jpg" alt="" />
+    <%= image_tag('portfolio/donate.jpg') %>
+    
 
 
 
     <div class="description-box">
 
-      <h4>Eve</h4>
+      <h4>Donate Today!</h4>
 
-      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+      <p><script type="text/javascript" src="https://www.wepay.com/js/iframe.wepay.js">
+	</script>
 
-      <span class="categories"><i class="icon-tag"></i>Photography, Branding</span>
+	<script type="text/javascript">
+	  WePay.iframe_checkout("checkout_div_id", "checkout_uri");
+      </script></p>
+
+
 
     </div>
 
 
 
     <div class="link-box">
-
-      <a href="http://www.behance.net">Details</a>
 
       <a class="close-reveal-modal">Close</a>
 
@@ -283,7 +280,6 @@
 
       <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-      <span class="categories"><i class="icon-tag"></i>Photography, Web Design</span>
 
     </div>
 
@@ -291,7 +287,6 @@
 
     <div class="link-box">
 
-      <a href="http://www.behance.net">Details</a>
 
       <a class="close-reveal-modal">Close</a>
 
@@ -319,7 +314,6 @@
 
       <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-      <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
 
     </div>
 
@@ -327,7 +321,6 @@
 
     <div class="link-box">
 
-      <a href="http://www.behance.net">Details</a>
 
       <a class="close-reveal-modal">Close</a>
 
@@ -355,7 +348,6 @@
 
       <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-      <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
 
     </div>
 
@@ -363,7 +355,6 @@
 
     <div class="link-box">
 
-      <a href="http://www.behance.net">Details</a>
 
       <a class="close-reveal-modal">Close</a>
 
@@ -391,15 +382,11 @@
 
       <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-      <span class="categories"><i class="icon-tag"></i>Photography</span>
-
     </div>
 
 
 
     <div class="link-box">
-
-      <a href="http://www.behance.net">Details</a>
 
       <a class="close-reveal-modal">Close</a>
 
@@ -412,3 +399,8 @@
 
 
 </section> <!-- Portfolio End -->
+
+
+<!-- Le Javascript -->
+
+
