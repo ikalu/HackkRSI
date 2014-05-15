@@ -86,7 +86,7 @@ header {
    height: 54px;
    width: 100%;
    z-index: 99999;
-   background: url('k-opacity-70.png');
+   background: image-url('k-opacity-70.png');
 
    position: fixed;
    top: 0;
@@ -190,7 +190,7 @@ ul#nav li.active a { color: #11ABB0; }
 /* ================================================================== */
 
 #intro {
-   background: #111 url('intro-bg.jpg') no-repeat center;
+   background: #111  image-url('intro-bg.jpg')  no-repeat center;
    overflow: hidden;
 }
 
