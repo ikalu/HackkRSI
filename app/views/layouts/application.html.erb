@@ -112,8 +112,8 @@
 	<h4>How much would you like to donate?</h4>
 
 	<p>
-	  <form>
-	    Amount: <input type="text" name="amount" id="donation"/>
+	  <form method="post">
+	    Amount: <input type="number" name="amount" id="dollars" min="0" max="9999" size="3" /> . <input type="number" id="cents" min="0" max="99" size="2" />
 	    <input type="submit" value="Next" id="donate" class="close-reveal-modal" >
 	    
 	  </form>
@@ -131,6 +131,10 @@
 <script src="https://checkout.stripe.com/checkout.js"></script>
 
 
+
+
+  
+
 <script>
   var handler = StripeCheckout.configure({
     key: 'pk_test_V3YbeQlUvtNWvKFPkFBd8fZD',
@@ -142,14 +146,27 @@
   });
 
   document.getElementById('donate').addEventListener('click', function(e) {
+  
+
     // Open Checkout with further options
     handler.open({
       name: 'Demo Site',
       description: '2 widgets ($20.00)',
-      amount: document.getElementById("donation").value * 100
+      amount: getValues()
     });
     e.preventDefault();
   });
+</script>
+
+<script>
+function getValues()
+{
+ var price = document.getElementById("dollars").value + "." + document.getElementById("cents").value * 100;
+price = Number(price);
+return price * 100;
+
+}
+
 </script>
 
 
