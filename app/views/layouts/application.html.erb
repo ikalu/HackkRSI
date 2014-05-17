@@ -43,7 +43,7 @@
         <div class="col full">
 
           <div class="logo">
-	    <a href="#"><img alt="" src="images/logo.png"></a>
+	    <a href="#"><%= image_tag 'logo.png' %></a>
           </div>
 	  
 	  
@@ -55,10 +55,9 @@
             <ul id="nav" class="nav">
 	      <li><%= link_to "Home", root_url(anchor: "intro") %></li>
 	      <li><%= link_to "The Dilemma", root_url(anchor: "services") %></li>
-	      <li><%= link_to "Our Efforts", root_url(anchor: "portfolio") %></li>
 	      <li><%= link_to "Get Involved", involved_path %></li>
 	      <li><a href="#" data-reveal-id="modal-00">Donate</a></li>
-	      <li><%= link_to "About", root_url(anchor: "about") %></li>
+              <li><a href="#about">Contact</a></li>
             </ul>
 
           </nav>
