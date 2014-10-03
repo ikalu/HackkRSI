@@ -56,4 +56,7 @@ AiInActionWebsite::Application.routes.draw do
 
   root 'pages#home'
   match '/involved', to: 'pages#involved', via: 'get'
+  match '/space', to: 'pages#space', via: 'get'
+  match '/tour', to: 'pages#tour', via: 'get'
+
 end
