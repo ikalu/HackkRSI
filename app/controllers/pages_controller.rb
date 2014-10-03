@@ -3,9 +3,23 @@ class PagesController < ApplicationController
   def home
   end
   
-  def involved
+  def events
   end
 
-  def blog
+  def foundFathers
   end
+
+  def ghostStories
+  end
+
+  def grandisonHarris
+  end
+
+  def history
+  end
+  
+  def logo
+  end
+
+
 end

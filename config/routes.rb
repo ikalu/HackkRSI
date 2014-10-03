@@ -55,5 +55,10 @@ AiInActionWebsite::Application.routes.draw do
   #   end
 
   root 'pages#home'
-  match '/involved', to: 'pages#involved', via: 'get'
+  match '/events', to: 'pages#events', via: 'get'
+  match '/foundFathers', to: 'pages#foundFathers', via: 'get'
+  match '/ghostStories', to: 'pages#ghostStories', via: 'get'
+  match '/grandisonHarris', to: 'pages#grandisonHarris', via: 'get'
+  match '/history', to: 'pages#history', via: 'get'
+  match '/logo', to: 'pages#logo', via: 'get'
 end
